@@ -8,8 +8,8 @@
   body {
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-    background: #f5f5f5;
-    color: #222;
+    background: var(--bg-color);
+    color: var(--text-color);
     line-height: 1.6;
   }
   
@@ -17,8 +17,8 @@
      HEADER
   ===================== */
   .navbar {
-    background: #ffffff;
-    border-bottom: 1px solid #ddd;
+    background: var(--card-bg);
+    border-bottom: 1px solid var(--border-color);
   }
   
   .nav-container {
@@ -33,7 +33,22 @@
   
   .nav-container p {
     margin: 0.5rem 0 0;
-    color: #666;
+    color: var(--muted-text);
+  }
+
+  .theme-btn {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border-color);
+    background: var(--card-bg);
+    color: var(--text-color);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .theme-btn:hover {
+    background: var(--border-color);
   }
   
   /* =====================
@@ -69,10 +84,10 @@
   }
   
   .card {
-    background: white;
+    background: var(--card-bg);
     padding: 1.5rem;
     border-radius: 12px;
-    border: 1px solid #e5e5e5;
+    border: 1px solid var(--border-color);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
   }
   
